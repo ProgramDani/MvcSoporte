@@ -11,6 +11,7 @@ using MvcSoporte.Models;
 
 namespace MvcSoporte.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class TipoAveriasController : Controller
     {
         private readonly MvcSoporteContexto _context;
