@@ -26,7 +26,11 @@
                             {
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area=""
-                                       asp-controller="Home" asp-action="Privacy">Privacidad</a>
+                                       asp-controller="MisDatos" asp-action="Edit">Mis Datos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area=""
+                                       asp-controller="MisAvisos" asp-action="Index">Mis avisos</a>
                                 </li>
                             }
                             @if (User.IsInRole("Administrador"))
@@ -58,6 +62,10 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area=""
                                    asp-controller="Home" asp-action="Index">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area=""
+                                   asp-controller="Home" asp-action="Privacy">Privacidad</a>
                             </li>
                         }
                     </ul>
